@@ -1,4 +1,3 @@
-#include <unistd.h>
 #include "main.h"
 /**
  * main - print _putchar
@@ -14,8 +13,9 @@ int main(void)
 	for (p = 0; p <= 9; p++)
 	{
 		_putchar(word[p]);
-	_putchar('\n');
 	}
-	return 0;
+	_putchar('\n');
+
+	return (0);
 }
 
