@@ -23,7 +23,7 @@ int main(void)
 
 		else if ((f % 5) == 0)
 		{
-			printf("Buzz");
+			printf("Buzz ");
 		}
 
 		else
