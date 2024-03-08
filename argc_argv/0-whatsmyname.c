@@ -4,7 +4,7 @@
  *main - print its name, followed by new line
  *@argc: int argument
  *@argv: char type pointer argument
- *return:0
+ *Return:0
  */
 int main(int argc, char *argv[])
 {
