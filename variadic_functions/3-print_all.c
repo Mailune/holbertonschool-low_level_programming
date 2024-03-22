@@ -21,7 +21,7 @@ void print_all(const char * const format, ...)
 				printf("%c", va_arg(args, int));
 				break;
 			case 'i':
-				printf("%d", va_arg(args, int));
+				printf("%i", va_arg(args, int));
 				break;
 			case 'f':
 				printf("%f", va_arg(args, double));
@@ -33,17 +33,14 @@ void print_all(const char * const format, ...)
 					printf("(nil)");
 					break;
 				}
-				printf("%s", str);
+					printf("%s", str);
 					break;
 		}
-		if ((format[i + 1] != '\0') &&
-	(format[i] == 'c' || format[i] == 'i' || format[i] == 'f' || format[i] == 's'))
-
+		if ((format[i] == 'c' || format[i] == 'i' || format[i] == 'f' ||
+		format[i] == 's') && format[i + 1] != '\0')
 			printf(", ");
-			i++;
+		i++;
 	}
-
-		printf("\n");
-
+	printf("\n");
 	va_end(args);
 }
